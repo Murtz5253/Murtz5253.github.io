@@ -242,7 +242,7 @@ display: none;
 
 
 
-/* Loader four: Spin */
+/* Code below taken from WDD Lab 6! */
 .loader.four .rings {
 	position: relative;
 	top: 400px;
