@@ -1,0 +1,748 @@
+body {
+	width: auto;
+	margin: 0px;
+	/*background-image: url("../img/cliffside.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    background-size: cover;*/
+    position: relative;
+    height: 3202px;
+    background-color: #F4F2F2;
+    display: none;
+    animation: fadeInAnimation ease 3s; 
+	animation-iteration-count: 1; 
+	animation-fill-mode: forwards; 
+
+}
+
+@keyframes fadeInAnimation { 
+	0% { 
+		opacity: 0; 
+	} 
+	100% { 
+		opacity: 1; 
+	} 
+} 
+
+
+#navbar {
+	position: fixed;
+	width: 100%;
+	height: 3.5vw;
+	background-color: #304330;
+	margin: 0px;
+	z-index: 1;
+}
+
+#my-name {
+	float: left;
+	padding-left: 1.75%;
+	padding-top: .8%;
+	text-decoration: none;
+	font-family: 'Cormorant', serif;
+	font-size: 150%;
+	color: #FFFFFF;
+}
+
+.nav-link {
+	float: right;
+	padding-left: .95%;
+	padding-right: .95%;
+	padding-top: 1%;
+	text-decoration: none;
+	font-family: 'Cormorant', serif;
+	font-size: 125%;
+	color: #FFFFFF;
+	height: 2.5vw;
+	width: 7%;
+}
+
+/*.links {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}*/
+
+.nav-link:hover {
+	background-color: #586454;
+	/*box-shadow: 0 4px 10px rgba(0,0,0,0.4);*/
+	cursor: pointer;
+	font-weight: bold; 
+}
+
+#ugsi {
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 450%;
+	font-style: medium;
+	color: #000000;
+	top: 5%;
+	left: 11vw;
+	width: 80%;
+	height: 30vh;
+	animation: fadeInUp ease 3s; 
+}
+
+#ugsi-details {
+	position: relative;
+	font-family: 'Crimson Pro', serif;
+	font-size: 250%;
+	font-weight: lighter;
+	color: #3C2263;
+	top: 5.5%;
+	left: 18vw;
+	width: 65%;
+	height: 20vh;
+	animation: fadeInUp ease 3s; 
+}
+
+#student {
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 450%;
+	font-style: medium;
+	color: #000000;
+	top: 15%;
+	left: 11vw;
+	width: 80%;
+	height: 30vh;
+	animation: fadeInUp ease 3s;
+}
+
+#student-details {
+	position: relative;
+	font-family: 'Crimson Pro', serif;
+	font-size: 250%;
+	color: #3C2263;
+	top: 15.5%;
+	left: 18vw;
+	width: 65%;
+	height: 20vh;
+	animation: fadeInUp ease 3s;
+}
+
+#guide {
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 450%;
+	font-style: medium;
+	color: #000000;
+	top: 28%;
+	left: 10.5vw;
+	width: 80%;
+	height: 30vh;
+	animation: fadeInUp ease 3s;
+}
+
+#guide-details {
+	position: relative;
+	font-family: 'Crimson Pro', serif;
+	font-size: 250%;
+	color: #3C2263;
+	top: 26%;
+	left: 17.5vw;
+	width: 65%;
+	height: 20vh;
+	animation: fadeInUp ease 3s;
+}
+
+#background {
+	top: 30%;
+	left: 13.5vw;
+	position: relative;
+	width: 500px;
+	height: 600px;
+	background-color: #472F6C;
+	border-width: 4px;
+	border-style: solid;
+	border-color: #472F6C;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.35);
+}
+
+#background2 {
+	top: 11%;
+	left: 53vw;
+	position: relative;
+	width: 500px;
+	height: 600px;
+	background-color: #472F6C;
+	border-width: 4px;
+	border-style: solid;
+	border-color: #472F6C;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.35);
+}
+
+#cover, #cover2 {
+	position: absolute;
+	width: 500px;
+	height: 600px;
+	background-color: #472F6C;
+	opacity: .4;
+}
+
+#cover:hover, #cover2:hover {
+	cursor: pointer;
+	box-shadow: 0 4px 10px rgba(0,0,0,0.35);
+
+}
+
+#background:hover, #background2:hover {
+	cursor: pointer;
+	box-shadow: 0 4px 10px rgba(0,0,0,.85);
+
+}
+
+
+#recursion-description, #count-description {
+	position: absolute;
+	top: 550px;
+	width: 500px;
+	height: 50px;
+	background-color: 304330;
+	color: white;
+	z-index: 1;
+	text-align: center;
+	vertical-align: center;
+	line-height: 50px;
+	font-family: 'Nunito', sans-serif;
+	font-size: 30px;
+}
+
+img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+}
+
+/* Source: https://css-tricks.com/add-page-transitions-css-smoothstate-js/ */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+@media screen and (max-width: 1400px) and (max-height: 900px) { 
+
+	body {
+		height: 2602px;
+	}
+
+	#navbar {
+		height: 4.1vw;
+	}
+
+	#my-name {
+		padding-top: 1%;
+	}
+
+	.nav-link {
+		padding-top: 1.1%;
+		padding-left: 1%;
+		padding-right: 1%;
+		height: 3vw;
+	}
+
+
+	#ugsi {
+		font-size: 375%;
+		top: 6%;
+		left: 14vw;
+		width: 75%;
+	}
+
+	#ugsi-details {
+		font-size: 190%;
+		top: 5.5%;
+		left: 21.5vw;
+		width: 60%;
+	}
+
+	#student {
+		font-size: 375%;
+		left: 13.5vw;
+		width: 75%;
+		top: 17%;
+	}
+
+	#student-details {
+		font-size: 190%;
+		top: 16%;
+		left: 23.5vw;
+		width: 55%;
+	}
+
+	#guide {
+		font-size: 375%;
+		top: 29%;
+		left: 7.5vw;
+		width: 85%;
+	}
+
+	#guide-details {
+		font-size: 190%;
+		top: 25%;
+		left: 19.25vw;
+		width: 65%;
+	}
+
+	#background {
+		top: 25%;
+		left: 9vw;
+	}
+
+	#background2 {
+		top: 1.625%;
+		left: 51vw;
+	}
+
+
+}
+
+@media screen and (max-width: 1317px) and (max-height: 800px) {
+
+	body {
+		height: 2502px;
+	}
+
+
+	#navbar {
+		height: 4.1vw;
+	}
+
+	#my-name {
+		padding-top: 1%;
+	}
+
+	.nav-link {
+		padding-top: 1.1%;
+		padding-left: 1%;
+		padding-right: 1%;
+		height: 3vw;
+	}
+
+
+	#ugsi {
+		top: 6%;
+		font-size: 375%;
+		left: 12.5vw;
+		width: 75%;
+	}
+
+	#ugsi-details {
+		font-size: 185%;
+		top: 5%;
+		left: 15.5vw;
+		width: 70%;
+	}
+
+	#student {
+		font-size: 375%;
+		top: 19%;
+		left: 8vw;
+		width: 85%;
+	}
+
+	#student-details {
+		font-size: 185%;
+		top: 18%;
+		left: 15vw;
+		width: 70%;
+	}
+
+	#guide {
+		font-size: 375%;
+		top: 32.5%;
+		left: 5vw;
+		width: 91%;
+	}
+
+	#guide-details {
+		font-size: 185%;
+		top: 29%;
+		left: 18.25vw;
+		width: 65%;
+	}
+
+	#background {
+		top: 29%;
+		left: 15.5vw;
+		position: relative;
+		width: 400px;
+		height: 500px;
+	}
+
+	#background2 {
+		top: 8.75%;
+		left: 54vw;
+		position: relative;
+		width: 400px;
+		height: 500px;
+	}
+
+	#cover, #cover2 {
+		width: 400px;
+		height: 500px;
+	}
+
+	#recursion-description, #count-description {
+		top: 451px;
+		width: 400px;
+		font-size: 25px;
+	}
+
+
+
+}
+
+@media screen and (max-width: 1250px) and (max-height: 900px) { 
+
+
+	#ugsi {
+		font-size: 360%;
+		top: 6%;
+		left: 14vw;
+		width: 75%;
+	}
+
+	#ugsi-details {
+		font-size: 180%;
+		top: 5.5%;
+		left: 21.5vw;
+		width: 60%;
+	}
+
+	#student {
+		font-size: 360%;
+		left: 13.5vw;
+		width: 75%;
+		top: 17%;
+	}
+
+	#student-details {
+		font-size: 180%;
+		top: 16%;
+		left: 23.5vw;
+		width: 55%;
+	}
+
+	#guide {
+		font-size: 360%;
+		top: 29%;
+		left: 8vw;
+		width: 85%;
+	}
+
+	#guide-details {
+		font-size: 180%;
+		top: 25%;
+		left: 19.25vw;
+		width: 65%;
+	}
+
+	#background {
+		top: 26%;
+		left: 13vw;
+		position: relative;
+		width: 400px;
+		height: 500px;
+	}
+
+	#background2 {
+		top: 6.5%;
+		left: 53.5vw;
+		position: relative;
+		width: 400px;
+		height: 500px;
+	}
+
+	#cover, #cover2 {
+		width: 400px;
+		height: 500px;
+	}
+
+	#recursion-description, #count-description {
+		top: 451px;
+		width: 400px;
+		font-size: 25px;
+	}
+
+
+
+}
+
+@media screen and (max-width: 1200px) and (max-height: 900px) { 
+
+	body {
+		height: 2602px;
+	}
+
+	#navbar {
+		height: 4.1vw;
+	}
+
+	#my-name {
+		padding-top: 1%;
+	}
+
+	.nav-link {
+		padding-top: 1.1%;
+		padding-left: 1%;
+		padding-right: 1%;
+		height: 3vw;
+	}
+
+
+	#ugsi {
+		font-size: 350%;
+		top: 6%;
+		left: 14vw;
+		width: 75%;
+	}
+
+	#ugsi-details {
+		font-size: 175%;
+		top: 5.5%;
+		left: 21.5vw;
+		width: 60%;
+	}
+
+	#student {
+		font-size: 350%;
+		left: 13.5vw;
+		width: 75%;
+		top: 17%;
+	}
+
+	#student-details {
+		font-size: 175%;
+		top: 16%;
+		left: 21vw;
+		width: 60%;
+	}
+
+	#guide {
+		font-size: 350%;
+		top: 29%;
+		left: 7.5vw;
+		width: 85%;
+	}
+
+	#guide-details {
+		font-size: 175%;
+		top: 25%;
+		left: 19.25vw;
+		width: 65%;
+	}
+
+	#background {
+		top: 26%;
+		left: 13vw;
+		position: relative;
+		width: 400px;
+		height: 500px;
+	}
+
+	#background2 {
+		top: 6.5%;
+		left: 53vw;
+		position: relative;
+		width: 400px;
+		height: 500px;
+	}
+
+	#cover, #cover2 {
+		width: 400px;
+		height: 500px;
+	}
+
+	#recursion-description, #count-description {
+		top: 451px;
+		width: 400px;
+		font-size: 25px;
+	}
+
+
+}
+
+@media screen and (max-width: 1150px) and (max-height: 900px) { 
+
+
+	#ugsi {
+		font-size: 325%;
+		top: 6%;
+		left: 14vw;
+		width: 75%;
+	}
+
+	#ugsi-details {
+		font-size: 165%;
+		top: 5.5%;
+		left: 21.5vw;
+		width: 60%;
+	}
+
+	#student {
+		font-size: 325%;
+		left: 13.5vw;
+		width: 75%;
+		top: 17%;
+	}
+
+	#student-details {
+		font-size: 165%;
+		top: 16.5%;
+		left: 23.5vw;
+		width: 55%;
+	}
+
+	#guide {
+		font-size: 325%;
+		top: 29%;
+		left: 8vw;
+		width: 85%;
+	}
+
+	#guide-details {
+		font-size: 165%;
+		top: 26.5%;
+		left: 19.25vw;
+		width: 65%;
+	}
+
+	#background {
+		top: 26%;
+		left: 13vw;
+		position: relative;
+		width: 400px;
+		height: 500px;
+	}
+
+	#background2 {
+		top: 6.5%;
+		left: 53.5vw;
+		position: relative;
+		width: 400px;
+		height: 500px;
+	}
+
+	#cover, #cover2 {
+		width: 400px;
+		height: 500px;
+	}
+
+	#recursion-description, #count-description {
+		top: 451px;
+		width: 400px;
+		font-size: 25px;
+	}
+
+
+
+}
+
+@media screen and (max-width: 1075px) and (max-height: 769px) {
+
+	body {
+		height: 2502px;
+	}
+
+
+	#navbar {
+		height: 4.2vw;
+	}
+
+	#my-name {
+		padding-top: .8%;
+	}
+
+	.nav-link {
+		padding-top: .95%;
+		padding-left: 1%;
+		padding-right: 1%;
+		height: 3.2vw;
+		width: 8%;
+	}
+
+
+	#ugsi {
+		top: 3.5%;
+		font-size: 325%;
+		left: 8vw;
+		width: 85%;
+	}
+
+	#ugsi-details {
+		font-size: 160%;
+		top: 3%;
+		left: 15vw;
+		width: 70%;
+	}
+
+	#student {
+		font-size: 325%;
+		top: 13%;
+		left: 8vw;
+		width: 85%;
+	}
+
+	#student-details {
+		font-size: 160%;
+		top: 12.75%;
+		left: 15vw;
+		width: 70%;
+	}
+
+	#guide {
+		font-size: 325%;
+		top: 25.5%;
+		left: 5vw;
+		width: 91%;
+	}
+
+	#guide-details {
+		font-size: 160%;
+		top: 23%;
+		left: 18.25vw;
+		width: 65%;
+	}
+
+	#background {
+		top: 24%;
+		left: 9vw;
+		position: relative;
+		width: 400px;
+		height: 500px;
+	}
+
+	#background2 {
+		top: 3.7%;
+		left: 51.5vw;
+		position: relative;
+		width: 400px;
+		height: 500px;
+	}
+
+	#cover, #cover2 {
+		width: 400px;
+		height: 500px;
+	}
+
+	#recursion-description, #count-description {
+		top: 451px;
+		width: 400px;
+		font-size: 25px;
+	}
+
+
+
+}
