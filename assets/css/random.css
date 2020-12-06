@@ -58,6 +58,10 @@ body {
 	width: 7%;
 }
 
+a.nav-link { 
+	text-align: center;
+}
+
 /*.links {
 	display: flex;
 	flex-direction: row;
